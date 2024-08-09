@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const trainData = require('./trains.json');
 
+app.use(cors());
+
+
 app.get('/api/trains', (req, res) => {
   res.json(trainData);
 });
