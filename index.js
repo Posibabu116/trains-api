@@ -11,6 +11,6 @@ app.get('/api', (req, res) => {
 });
 
 const PORT = 8080;
-app.listen(PORT, '192.168.0.12', () => {
+app.listen(PORT, () => {
   console.log(`Server running on http://192.168.0.12:${PORT}`);
 });
